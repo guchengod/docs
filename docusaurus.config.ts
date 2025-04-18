@@ -89,7 +89,7 @@ const config: Config = {
           href: "https://docmost.com",
         },
         {
-          href: "https://github.com/docmost/docmost",
+          href: "https://github.com/guchengod/docmost",
           label: "GitHub",
           position: "right",
         },
