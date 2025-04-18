@@ -1,5 +1,5 @@
 # 重定向旧路径到新路径
-/docs/* /:splat 301!
+/docs/* /:splat 301
 
-# 处理404页面
-/* /index.html 200
+# 处理SPA路由
+/*    /index.html   200
