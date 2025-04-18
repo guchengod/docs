@@ -1,0 +1,7 @@
+{
+  "build": {
+    "command": "yarn build",
+    "output_directory": "build",
+    "root_directory": "/"
+  }
+}
