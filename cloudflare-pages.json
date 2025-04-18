@@ -1,6 +1,6 @@
 {
   "build": {
-    "command": "yarn build",
+    "command": "bash ./build.sh",
     "output_directory": "build",
     "root_directory": "/"
   }
