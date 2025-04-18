@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# 使用固定版本的 yarn
-npm install -g yarn@1.22.19
+# 显示当前环境信息
+echo "Node version: $(node -v)"
+echo "Yarn version: $(yarn -v)"
 
 # 安装依赖
-yarn install --frozen-lockfile
+yarn install --frozen-lockfile --network-timeout 100000
 
 # 构建项目
 yarn build
