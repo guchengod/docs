@@ -25,6 +25,8 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 - **Diagrams**: Built-in support for Draw.io, Excalidraw, and Mermaid diagramming tools.
 - **Math Equations**: Write inline and block-level math equations using KaTeX.
 - **Callouts and Toggle Blocks**: Structure your content with callout notices and collapsible toggle blocks.
+- **Synced Blocks**: Reuse the same content across multiple pages with blocks that stay in sync.
+- **Page Labels**: Organize and categorize pages with customizable labels.
 - **Comments**: Add comments to pages for better communication and feedback.
 - **Page History**: Track changes with a comprehensive version history and restore previous versions.
 - **Public Sharing**: Publicly share your pages, allowing anyone with the link to view them.
@@ -60,6 +62,8 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 - **Disable public sharing** — Control public sharing at the workspace or space level.
 - **Confluence importer** — Import Confluence spaces with preserved formatting, hierarchy, and attachments.
 - **DOCX importer** — Import Microsoft Word documents.
+- **PDF importer** — Import PDF files into pages.
+- **Templates** — Create and reuse page templates across your workspace.
 - **Priority support** — Direct email support.
 - You can generate a free trial license key at [https://customers.docmost.com](https://customers.docmost.com).
 - [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise Edition.">Purchase enterprise edition</a>].

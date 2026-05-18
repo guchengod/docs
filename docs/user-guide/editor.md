@@ -213,8 +213,8 @@ Hover over any block to reveal a drag handle on the left. Click and drag the han
 
 | Command | Shortcut |
 |---------|----------|
-| Indent list item / next table cell | `Tab` |
-| Outdent list item / previous table cell | `Shift + Tab` |
+| Indent / next table cell | `Tab` |
+| Unindent / previous table cell | `Shift + Tab` |
 | Open slash command menu | `/` |
 | Open mention menu | `@` |
 | Open emoji picker | `:` |
