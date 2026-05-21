@@ -39,3 +39,33 @@ Docmost supports authentication through OpenID Connect (OIDC), allowing integrat
     - Click **"Save"** to apply your settings.
 
 After successful configuration, your OIDC provider will appear as an available login method on the Docmost login page. Users can now authenticate through your configured OIDC integration.
+
+## Group Synchronization
+
+### How Group Sync Works
+
+When group synchronization is enabled, Docmost automatically manages user group memberships based on the group claims returned by your OIDC provider on each login.
+
+Docmost reads groups from the `groups` or `roles` claim in the userinfo response. The claim can be an array of strings or a single comma- or semicolon-separated string.
+
+⚠️ **Groups must be pre-created in Docmost**: OIDC group synchronization does NOT create new groups. You must manually create groups in Docmost with names that match the values returned by your IdP. Matching is case-insensitive.
+
+### Setting Up Group Sync
+
+1. **Configure your OIDC Provider** to include a `groups` (or `roles`) claim in the userinfo response or ID token. Most providers (Okta, Keycloak, Auth0, Microsoft Entra ID) require an explicit scope or claim mapping to be added.
+
+2. **Create Groups in Docmost**:
+   ```
+   Example OIDC groups claim:
+   {
+     "groups": ["Engineering", "Marketing", "HR-Team"]
+   }
+
+   Create corresponding Docmost groups:
+   - Engineering
+   - Marketing
+   - HR-Team
+   ```
+   Learn more about Docmost [Groups Documentation](/user-guide/groups).
+
+3. **Enable Group Sync** in the OIDC provider configuration.
