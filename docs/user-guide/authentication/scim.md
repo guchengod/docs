@@ -99,7 +99,7 @@ Supported user attributes: `userName`, `displayName`, `name.formatted`, `name.gi
 
 Supported group attributes: `displayName`, `members`, `externalId`.
 
-The default **Everyone** group cannot be updated or deleted via SCIM. Learn more in the [Groups Documentation](../groups).
+The default **Everyone** group cannot be updated or deleted via SCIM. Learn more in the [Groups Documentation](/user-guide/groups).
 
 ### Discovery
 

@@ -12,7 +12,7 @@ Authentication methods in Docmost include:
 - OpenID Connect (OIDC) (enterprise)
 - Microsoft Azure Entra (Active Directory), Okta, OneLogin, Google SSO, Keycloak, Authentik, Authelia, Duo and other SAML 2.0 and OpenID Connect compatible providers.
 
-For automated user and group provisioning from your identity provider, see [SCIM](./scim) (enterprise).
+For automated user and group provisioning from your identity provider, see [SCIM](./scim.md) (enterprise).
 
 Single Sign-On (SSO)
 <DocCardList />
