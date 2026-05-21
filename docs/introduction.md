@@ -65,8 +65,8 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 - **DOCX importer** — Import Microsoft Word documents.
 - **PDF importer** — Import PDF files into pages.
 - **Templates** — Create and reuse page templates across your workspace.
-- **Page-level Permissions** — Control access with granular view and edit permissions on individual pages and spaces.
-- **Page Verification & Approval Workflow** — Review, verify, and approve content to ensure documentation stays accurate and up to date.
+- **Page-level permissions** — Control access with granular view and edit permissions on individual pages and spaces.
+- **Page verification & approval workflow** — Review, verify, and approve content to ensure documentation stays accurate and up to date.
 - **Priority support** — Direct email support.
 - You can generate a free trial license key at [https://customers.docmost.com](https://customers.docmost.com).
 - [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise Edition.">Purchase enterprise edition</a>].
