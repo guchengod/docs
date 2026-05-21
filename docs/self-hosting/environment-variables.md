@@ -47,6 +47,15 @@ To configure your application, set the following environment variables. These va
 | `AWS_S3_ENDPOINT`          |         | The endpoint URL for your S3 service (optional). |
 | `AWS_S3_FORCE_PATH_STYLE`  | `true`  | Force the request to use path-style addressing (optional). |
 
+### Using Azure Blob Storage
+
+| Variable                       | Example | Description                                                |
+| ------------------------------ | ------- | ---------------------------------------------------------- |
+| `STORAGE_DRIVER`               | `azure` | The storage driver to use for file storage.                |
+| `AZURE_STORAGE_ACCOUNT_NAME`   |         | Your Azure Storage account name.                           |
+| `AZURE_STORAGE_ACCOUNT_KEY`    |         | Your Azure Storage account key.                            |
+| `AZURE_STORAGE_CONTAINER`      |         | The name of your blob container.                           |
+
 
 ### Storage file upload limits
 
@@ -108,6 +117,21 @@ The default Draw.io embed url is `https://embed.diagrams.net`.
 | `TYPESENSE_URL`     | `http://localhost:8108`   | The URL of your Typesense server. Required when `SEARCH_DRIVER=typesense`. (Enterprise)                                                                                                         |
 | `TYPESENSE_API_KEY` | `your_api_key_here`       | Your Typesense API key with read/write permissions. Required when `SEARCH_DRIVER=typesense`. (Enterprise)                                                                                       |
 | `TYPESENSE_LOCALE`  | `en`                      | The locale for text analysis and search. Default is `en`. Examples: `en`, `es`, `fr`, `de`, `ja`, `zh`, `ko`, etc. See [Typesense supported languages](https://typesense.org/docs/latest/api/search.html#supported-languages) for full list. (Enterprise) |
+
+## Security
+
+### Iframe embedding
+
+By default, Docmost blocks other origins from embedding your instance in an `<iframe>`. This protects users against clickjacking attacks where a malicious site loads Docmost in a hidden frame and tricks signed-in users into clicking destructive actions. Out of the box, Docmost responds with `X-Frame-Options: SAMEORIGIN`, so only pages served from your own Docmost origin can iframe Docmost content.
+
+Public shared pages (`/share/...`) are exempt from this restriction and can always be embedded from any origin. Shares are public, read-only content with no authenticated actions, so they have no clickjacking surface.
+
+If you legitimately need to embed the rest of Docmost (the app itself) inside another tool, for example an intranet portal or LMS, use the variables below.
+
+| Variable                 | Example                                                   | Description                                                                                                                                                                                                                                                                                                  |
+|--------------------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `IFRAME_EMBED_ALLOWED`   | `false`                                                   | Master switch for external iframe embedding. Defaults to `false`, which emits `X-Frame-Options: SAMEORIGIN`. Set to `true` to permit external embedding.                                                                                                                                                     |
+| `IFRAME_ALLOWED_ORIGINS` | `https://intranet.example.com,https://portal.example.com` | Optional comma-separated allowlist. Only consulted when `IFRAME_EMBED_ALLOWED=true`. When provided, Docmost emits `Content-Security-Policy: frame-ancestors 'self' <origins>` instead of `X-Frame-Options`. When empty, embedding is allowed from any origin. |
 
 ## Telemetry
 We anonymously collect the active version, user count, page count, space and workspace count.

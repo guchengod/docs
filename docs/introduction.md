@@ -36,7 +36,7 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
   - ZIP archive import
   - Notion import
   - Confluence import (Enterprise)
-  - DOCX import (Enterprise)
+  - PDF & DOCX import (Enterprise)
 - **Print to PDF**: Generate PDF versions of pages using the browser print dialog.
 - **@ Mentions**: Mention team members and link to pages directly in the editor.
 - **Markdown Shortcuts**: Type Markdown syntax directly in the editor and it converts to rich text automatically.
@@ -54,8 +54,9 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 ## Enterprise Edition Features
 - **SSO** (SAML 2.0 / OIDC) — Integrate Microsoft Entra ID, Okta, OneLogin, and more.
 - **LDAP** — Authenticate users against your LDAP directory.
+- **SCIM provisioning** — Automate user and group provisioning, updates, and deactivation through your identity provider.
 - **MFA** (TOTP) — Multi-factor authentication with authenticator apps.
-- **AI** — AI-powered writing assistance (Ask AI) and AI-powered search (AI Answers). Use cloud models or local LLMs.
+- **AI** — AI Chat, AI-powered writing assistance (Ask AI), AI-powered search (AI Answers), and MCP. Use cloud models or local LLMs.
 - **API** — REST API with personal API keys and admin key management.
 - **Full-text search in attachments** — Search content inside PDF and DOCX file attachments.
 - **Resolve comments** — Mark comment threads as resolved.
@@ -64,6 +65,8 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 - **DOCX importer** — Import Microsoft Word documents.
 - **PDF importer** — Import PDF files into pages.
 - **Templates** — Create and reuse page templates across your workspace.
+- **Page-level Permissions** — Control access with granular view and edit permissions on individual pages and spaces.
+- **Page Verification & Approval Workflow** — Review, verify, and approve content to ensure documentation stays accurate and up to date.
 - **Priority support** — Direct email support.
 - You can generate a free trial license key at [https://customers.docmost.com](https://customers.docmost.com).
 - [<a href="mailto:sales@docmost.com?subject=Docmost Enterprise Edition.">Purchase enterprise edition</a>].

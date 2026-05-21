@@ -29,7 +29,7 @@ MAIL_FROM_NAME=Docmost
 ```
 
 ## File Storage
-Docmost supports both local storage and S3-compatible storage drivers. The default driver is `local storage`.
+Docmost supports local storage, S3-compatible storage, and Azure Blob Storage drivers. The default driver is `local storage`.
 ```shell
 STORAGE_DRIVER=local
 ```
@@ -48,6 +48,16 @@ AWS_S3_FORCE_PATH_STYLE=
 ```
 
 Being S3-compatible means Docmost can work with AWS S3, Backblaze, Wasabi, DigitalOcean Spaces, Minio, and other S3-compatible providers.
+
+### Using Azure Blob Storage
+If you wish to use Azure Blob Storage, you have to add the below environment variables:
+
+```shell
+STORAGE_DRIVER=azure
+AZURE_STORAGE_ACCOUNT_NAME=
+AZURE_STORAGE_ACCOUNT_KEY=
+AZURE_STORAGE_CONTAINER=
+```
 
 
 ### File upload size limit
@@ -127,6 +137,26 @@ SEARCH_DRIVER=typesense
 TYPESENSE_API_KEY=YOUR_KEY
 TYPESENSE_URL=http://localhost:8108
 TYPESENSE_LOCALE=en
+```
+
+## Iframe embedding
+Docmost blocks other origins from embedding your instance in an `<iframe>` by default.
+
+**Public shared pages (`/share/...`) are exempt and can always be embedded from any origin**, regardless of the settings below.
+
+### Allow embedding from any origin
+
+```shell
+IFRAME_EMBED_ALLOWED=true
+```
+
+When `IFRAME_EMBED_ALLOWED=true` and no allowlist is provided, Docmost emits no framing header, so any origin can embed it.
+
+### Allow embedding from specific origins
+
+```shell
+IFRAME_EMBED_ALLOWED=true
+IFRAME_ALLOWED_ORIGINS=https://intranet.example.com,https://portal.example.com
 ```
 
 ## Telemetry
