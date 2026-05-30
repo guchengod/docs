@@ -52,5 +52,5 @@ Workspace admins can view and manage API keys for all users in the workspace.
 
 1. Go to **Settings** > **API management** (under Workspace).
 
-This page displays all API keys across the workspace, including the **User** who owns each key. Admins can create, rename, and revoke keys on behalf of any user.
+This page displays all API keys across the workspace, including the **User** who owns each key. Admins can rename, and revoke any key.
 
