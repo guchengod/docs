@@ -9,6 +9,10 @@ import DocCardList from '@theme/DocCardList';
 
 A base is a database inside Docmost. Instead of writing content in a document, you organize it as structured records: a set of rows, each with the same properties. The same data can be shown in more than one view, so a list of tasks can appear as a table for editing and as a Kanban board for tracking.
 
+<p align="center">
+<img src="/docs/img/base-table.png" width="100%" alt="Bases table view"/>
+</p>
+
 :::note
 Bases is a commercial feature available on all self-hosted paid plans. An active Business or Enterprise license is required. Bases is not available in the free, open source edition.
 :::
@@ -46,22 +50,22 @@ You can also embed a base in the middle of a regular page.
 
 The base is inserted as a block in the document. Both commands create a base; **Kanban** simply starts on a board view. Use the expand control in its toolbar to open it as a full page when you need more room.
 
-## Views at a Glance
+## Views
 
 Every base supports two view types:
 
 - **Table** — a spreadsheet-style grid of rows and columns. Best for editing and scanning data.
 - **Kanban** — a board grouped by a Select or Status property, with one column per option. Best for moving records through stages.
 
-<p align="center">
-<img src="/docs/img/base-table.png" width="100%" alt="Bases table view"/>
-</p>
+See [Views](./views.md) for how to create and configure them.
+
+### Kanban
+
+The Kanban view groups your rows into columns by a Select or Status property — one card per row, one column per option. Drag a card from one column to another to update its status. It's best for tracking work as it moves through stages.
 
 <p align="center">
 <img src="/docs/img/base-kanban.png" width="100%" alt="Bases Kanban view"/>
 </p>
-
-See [Views](./views.md) for how to create and configure them.
 
 ## Permissions & Access
 
