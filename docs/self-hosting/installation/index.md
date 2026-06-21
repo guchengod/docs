@@ -5,11 +5,11 @@ sidebar_position: 1
 
 # Installation
 
-For now, Docker is the recommended mode of installation. If you are a developer, you may be interested in the [development guide](/self-hosting/development).
+Docker is the recommended mode of installation. If you are a developer, you may be interested in the [development guide](/self-hosting/development).
 
 
-:::tip Cloud Hosting  
-Don't want to worry about hosting, upgrades and backups? [**Try our Cloud Hosting**](https://app.docmost.com/create?utm_medium=installation)
+:::tip[Enterprise trial]
+Unlock enterprise features such as Bases, SSO, AI, Audit logs, and SCIM provisioning. Start an enterprise trial at [customers.docmost.com](https://customers.docmost.com/) to generate a license key.
 :::
 
 ## Prerequisites
