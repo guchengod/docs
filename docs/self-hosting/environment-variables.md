@@ -118,6 +118,14 @@ The default Draw.io embed url is `https://embed.diagrams.net`.
 | `TYPESENSE_API_KEY` | `your_api_key_here`       | Your Typesense API key with read/write permissions. Required when `SEARCH_DRIVER=typesense`. (Enterprise)                                                                                       |
 | `TYPESENSE_LOCALE`  | `en`                      | The locale for text analysis and search. Default is `en`. Examples: `en`, `es`, `fr`, `de`, `ja`, `zh`, `ko`, etc. See [Typesense supported languages](https://typesense.org/docs/latest/api/search.html#supported-languages) for full list. (Enterprise) |
 
+## SAML
+
+Most SAML configuration is done from the **Settings → Security & SSO** page in the app. The variable below is the exception, as it must be set on the server.
+
+| Variable                               | Example | Description                                                                                                                                                                                                                                                                                                                                                 |
+|----------------------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `SAML_DISABLE_REQUESTED_AUTHN_CONTEXT` | `false` | When `true`, Docmost omits the `RequestedAuthnContext` element (which requests `PasswordProtectedTransport`) from the SAML AuthnRequest. This lets identity providers such as AD FS use their default authentication method, for example Windows Integrated Authentication for intranet clients. Instance-wide; applies to all SAML providers. Defaults to `false`. |
+
 ## Security
 
 ### Iframe embedding

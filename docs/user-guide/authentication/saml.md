@@ -45,6 +45,10 @@ Docmost supports authentication via the Security Assertion Markup Language (SAML
 
 Once successfully configured, your SAML 2.0 provider will appear on Docmost's login page, allowing users to authenticate via your configured Identity Provider.
 
+## AD FS and Windows Integrated Authentication
+
+By default, Docmost requests a `PasswordProtectedTransport` authentication context, which forces AD FS to show its forms login. To let AD FS use Windows Integrated Authentication (Kerberos) for intranet clients, set [`SAML_DISABLE_REQUESTED_AUTHN_CONTEXT=true`](/self-hosting/environment-variables#saml) on the server.
+
 ## Group Synchronization
 
 ### How Group Sync Works

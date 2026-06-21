@@ -12,11 +12,12 @@ Docmost is an open-source alternative to the likes of Notion and Confluence. Whe
 
 Docmost has support for Spaces. You can create Spaces for different teams, projects, or departments depending on your needs. Each Space comes with its own permissions. With an optional enterprise edition, Docmost scales to meet the needs of larger organizations with SSO, AI, API access, and more.
 
-![img](https://docmost.com/screenshots/home.png)
+![img](/img/home_image.png)
 
 ## Features
 
 - **Collaborative Real-time Editor**: Work together on pages in real-time.
+- **Bases** (Table and Kanban views) (Enterprise): Organize content as structured databases with properties, filters, sorts, and formulas.
 - **Spaces**: Organize your pages by team, projects, or departments for better collaboration.
 - **Permissions Management**: Easily control access to content with intuitive permissions at the workspace and space level.
 - **Groups**: Grant unified permissions to users via groups.
@@ -52,6 +53,7 @@ Docmost has support for Spaces. You can create Spaces for different teams, proje
 - MFA via TOTP (Enterprise)
 
 ## Enterprise Edition Features
+- **Bases** (Table and Kanban views) — Organize content as structured databases with properties, filters, sorts, and formulas.
 - **SSO** (SAML 2.0 / OIDC) — Integrate Microsoft Entra ID, Okta, OneLogin, and more.
 - **LDAP** — Authenticate users against your LDAP directory.
 - **SCIM provisioning** — Automate user and group provisioning, updates, and deactivation through your identity provider.
